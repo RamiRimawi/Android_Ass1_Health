@@ -104,8 +104,8 @@ public class ItemsActivity extends AppCompatActivity {
         crdHorItem3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (txtHorItem3.getText().toString().equals("Dessert")) {
-                    updateVerticalCards("Dessert");
+                if (txtHorItem3.getText().toString().equals("Salad")) {
+                    updateVerticalCards("Salad");
                 } else if (txtHorItem3.getText().toString().equals("Smoothie")) {
                     updateVerticalCards("Smoothie");
                 }
@@ -115,8 +115,8 @@ public class ItemsActivity extends AppCompatActivity {
         crdHorItem4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (txtHorItem4.getText().toString().equals("Snack")) {
-                    updateVerticalCards("Snack");
+                if (txtHorItem4.getText().toString().equals("Dessert")) {
+                    updateVerticalCards("Dessert");
                 }
             }
         });
@@ -156,9 +156,9 @@ public class ItemsActivity extends AppCompatActivity {
         imgHorItem1.setImageResource(R.drawable.breakfast);
         txtHorItem2.setText("Lunch");
         imgHorItem2.setImageResource(R.drawable.lunch);
-        txtHorItem3.setText("Dessert");
+        txtHorItem3.setText("Salad");
         imgHorItem3.setImageResource(R.drawable.desert);
-        txtHorItem4.setText("Snack");
+        txtHorItem4.setText("Dessert");
         imgHorItem4.setImageResource(R.drawable.fruit);
 
         imgItem1Image.setImageResource(R.drawable.eggsandavogado);
@@ -232,45 +232,45 @@ public class ItemsActivity extends AppCompatActivity {
                 break;
 
             case "Lunch":
-                imgItem1Image.setImageResource(R.drawable.soup);
-                txtItem1Name.setText("Soup");
+                imgItem1Image.setImageResource(R.drawable.lonemuna);
+                txtItem1Name.setText("Grilled Salmon with Quinoa and Steamed Vegetables");
 
-                imgItem2Image.setImageResource(R.drawable.tonasalad);
-                txtItem2Name.setText("TonaSalad");
+                imgItem2Image.setImageResource(R.drawable.ltwomuna);
+                txtItem2Name.setText("Turkey and Vegetable Stir-Fry with Brown Rice");
 
-                imgItem3Image.setImageResource(R.drawable.sanduish);
-                txtItem3Name.setText("Sandwich");
+                imgItem3Image.setImageResource(R.drawable.lthreemuna);
+                txtItem3Name.setText("Stuffed Bell Peppers");
 
-                imgItem4Image.setImageResource(R.drawable.riceandchicken);
-                txtItem4Name.setText("Rice & Chicken");
+                imgItem4Image.setImageResource(R.drawable.lfourmuna);
+                txtItem4Name.setText("Chicken and Vegetable Soup");
+                break;
+
+            case "Salad":
+                imgItem1Image.setImageResource(R.drawable.sfourmuna);
+                txtItem1Name.setText("Mediterranean Chickpea Salad");
+
+                imgItem2Image.setImageResource(R.drawable.sonemuna);
+                txtItem2Name.setText("Kale and Quinoa Salad");
+
+                imgItem3Image.setImageResource(R.drawable.stwomuna);
+                txtItem3Name.setText("Mexican Black Bean Salad");
+
+                imgItem4Image.setImageResource(R.drawable.sthreemuna);
+                txtItem4Name.setText("Spinach, Apple, and Walnut Salad");
                 break;
 
             case "Dessert":
-                imgItem1Image.setImageResource(R.drawable.desert);
-                txtItem1Name.setText("Salads");
+                imgItem1Image.setImageResource(R.drawable.hunny);
+                txtItem1Name.setText("Baked Apples with Cinnamon");
 
-                imgItem2Image.setImageResource(R.drawable.kufta);
-                txtItem2Name.setText("Kufta");
+                imgItem2Image.setImageResource(R.drawable.cupcakemuna);
+                txtItem2Name.setText("Banana Nice Cream");
 
-                imgItem3Image.setImageResource(R.drawable.eggsandavocado);
-                txtItem3Name.setText("Eggs & Avocado");
+                imgItem3Image.setImageResource(R.drawable.chocomuna);
+                txtItem3Name.setText("Chocolate-Dipped Strawberries");
 
-                imgItem4Image.setImageResource(R.drawable.salmon);
-                txtItem4Name.setText("Salmon");
-                break;
-
-            case "Snack":
-                imgItem1Image.setImageResource(R.drawable.shofanbiscuit);
-                txtItem1Name.setText("Shofan Biscuit");
-
-                imgItem2Image.setImageResource(R.drawable.icecream);
-                txtItem2Name.setText("Ice Cream");
-
-                imgItem3Image.setImageResource(R.drawable.totandzabazy);
-                txtItem3Name.setText("Zabadi Tot");
-
-                imgItem4Image.setImageResource(R.drawable.darkchocolate);
-                txtItem4Name.setText("Dark Chocolate");
+                imgItem4Image.setImageResource(R.drawable.asalmuna);
+                txtItem4Name.setText("Chia Pudding with Almond Milk and Fruit");
                 break;
 
             case "Hot":

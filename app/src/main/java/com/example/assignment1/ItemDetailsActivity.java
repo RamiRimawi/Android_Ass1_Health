@@ -2,6 +2,7 @@ package com.example.assignment1;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -9,8 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class ItemDetailsActivity extends AppCompatActivity {
 
-    private TextView txtActivity4ItemName, txtActivity4ItemTime
-            , txtActivity4ItemTotalCal, txtHowToMake, txtFromWhatIt;
+    private TextView txtActivity4ItemName, txtActivity4ItemTime, txtActivity4ItemTotalCal, txtHowToMake, txtFromWhatIt, txtActivity4Ite;
     private ImageView imgItemLogo;
 
     @Override
@@ -24,6 +24,7 @@ public class ItemDetailsActivity extends AppCompatActivity {
         txtActivity4ItemTotalCal = findViewById(R.id.txtActivity4ItemTotalCal);
         txtFromWhatIt = findViewById(R.id.txtFromWhatIt);
         txtHowToMake = findViewById(R.id.txtHowToMake);
+        txtActivity4Ite = findViewById(R.id.txtActivity4Ite);
 
         Intent intent = getIntent();
         String itemName = intent.getStringExtra("ITEM_NAME");
@@ -34,198 +35,162 @@ public class ItemDetailsActivity extends AppCompatActivity {
 
     private void insertDataFromFood(String name) {
         switch (name) {
-            case "Hot Coffee":
-                txtActivity4ItemTime.setText("Calories: 2\nHot coffee is a low-calorie drink, simply brew your preferred beans with hot water.");
-                txtActivity4ItemTotalCal.setText("110 Cal");
-                imgItemLogo.setImageResource(R.drawable.coffee);
+
+            case "Weight":
+                txtFromWhatIt.setText("Calories Burned (30 minutes): 180-250 Cal \nWeight training involves lifting weights to build muscle strength.");
+                imgItemLogo.setImageResource(R.drawable.weight_training);
+                txtActivity4Ite.setVisibility(View.GONE);
+                txtActivity4ItemTotalCal.setVisibility(View.GONE);
                 break;
 
-            case "Hot Chocolate":
-                txtActivity4ItemTime.setText("Calories: 200\nHot chocolate is made with milk and cocoa powder, add sugar to taste.");
-                imgItemLogo.setImageResource(R.drawable.hotchoclatedrink);
+            case "HIIT":
+                txtFromWhatIt.setText("Calories Burned (30 minutes): 400-600 Cal \nHigh-intensity interval training involves short bursts of intense exercise followed by rest.");
+                imgItemLogo.setImageResource(R.drawable.hiit);
+                txtActivity4Ite.setVisibility(View.GONE);
+                txtActivity4ItemTotalCal.setVisibility(View.GONE);
                 break;
 
-            case "Hot Tea":
-                txtActivity4ItemTime.setText("Calories: 0\nTea is a healthy drink, you can choose green tea, black tea, or herbal tea.");
-                imgItemLogo.setImageResource(R.drawable.tea);
+            case "Cycling":
+                txtFromWhatIt.setText("Calories Burned (30 minutes): 250-400 Cal \nCycling is a great cardiovascular workout that strengthens the legs and improves endurance.");
+                imgItemLogo.setImageResource(R.drawable.cycling);
+                txtActivity4Ite.setVisibility(View.GONE);
+                txtActivity4ItemTotalCal.setVisibility(View.GONE);
                 break;
 
-            case "Health Drink":
-                txtActivity4ItemTime.setText("Calories: 120\nHealth drinks often contain nutrients like vitamins and minerals, mix them with water or juice.");
-                imgItemLogo.setImageResource(R.drawable.healthhotdrink);
+            case "Rowing":
+                txtFromWhatIt.setText("Calories Burned (30 minutes): 250-300 Cal \nRowing is a full-body workout that engages multiple muscle groups while improving cardiovascular health.");
+                imgItemLogo.setImageResource(R.drawable.rowing);
+                txtActivity4Ite.setVisibility(View.GONE);
+                txtActivity4ItemTotalCal.setVisibility(View.GONE);
                 break;
 
-            case "Water":
-                txtActivity4ItemTime.setText("Calories: 0\nWater is essential for life and keeps you hydrated.");
-                imgItemLogo.setImageResource(R.drawable.water);
+            case "Yoga":
+                txtFromWhatIt.setText("Calories Burned (30 minutes): 150-250 Cal \nYoga involves postures and breathing exercises that promote flexibility, strength, and mental clarity.");
+                imgItemLogo.setImageResource(R.drawable.yoga);
+                txtActivity4Ite.setVisibility(View.GONE);
+                txtActivity4ItemTotalCal.setVisibility(View.GONE);
                 break;
 
-            case "Cucumber Mint":
-                txtActivity4ItemTime.setText("Calories: 50\nA refreshing drink made from cucumber and mint, perfect for hot days.");
-                imgItemLogo.setImageResource(R.drawable.cucumber_mint_cooler);
+            case "Bodyweight":
+                txtFromWhatIt.setText("Calories Burned (30 minutes): 200-300 Cal \nBodyweight exercises use your own body as resistance, such as push-ups, squats, and lunges.");
+                imgItemLogo.setImageResource(R.drawable.bodyweight_exercises);
+                txtActivity4Ite.setVisibility(View.GONE);
+                txtActivity4ItemTotalCal.setVisibility(View.GONE);
                 break;
 
-            case "Green Tea":
-                txtActivity4ItemTime.setText("Calories: 30\nA healthy, refreshing drink combining green tea with the tang of lemon.");
-                imgItemLogo.setImageResource(R.drawable.green_tea_lemonade);
+            case "Jump Rope":
+                txtFromWhatIt.setText("Calories Burned (30 minutes): 350-450 Cal \nJump rope is a great cardio exercise that improves coordination, endurance, and heart health.");
+                imgItemLogo.setImageResource(R.drawable.jump_rope);
+                txtActivity4Ite.setVisibility(View.GONE);
+                txtActivity4ItemTotalCal.setVisibility(View.GONE);
                 break;
 
-            case "WaterMelon Lime":
-                txtActivity4ItemTime.setText("Calories: 120\nA cool, fruity drink made from watermelon and lime, perfect for summer.");
-                imgItemLogo.setImageResource(R.drawable.watermelon_lime_slushie);
+            case "Pilates":
+                txtFromWhatIt.setText("Calories Burned (30 minutes): 175-250 Cal \nPilates is a form of low-impact exercise that improves posture, flexibility, and strength.");
+                imgItemLogo.setImageResource(R.drawable.pilates);
+                txtActivity4Ite.setVisibility(View.GONE);
+                txtActivity4ItemTotalCal.setVisibility(View.GONE);
                 break;
 
-            case "Green Power":
-                txtActivity4ItemTime.setText("Calories: 200\nA nutrient-packed smoothie made with green vegetables and fruits, great for a morning boost.");
-                imgItemLogo.setImageResource(R.drawable.green_power_smoothie);
-                break;
-
-            case "Mango":
-                txtActivity4ItemTime.setText("Calories: 150\nA tropical smoothie with the sweetness of mango and the smoothness of yogurt or milk.");
-                imgItemLogo.setImageResource(R.drawable.mango_smoothie);
-                break;
-
-            case "Banana":
-                txtActivity4ItemTime.setText("Calories: 120\nA simple, creamy smoothie made with bananas. It’s a quick energy booster.");
-                imgItemLogo.setImageResource(R.drawable.banana_smoothie);
-                break;
-
-            case "Berry":
-                txtActivity4ItemTime.setText("Calories: 180\nA delicious smoothie made with mixed berries, offering antioxidants and a burst of flavor.");
-                imgItemLogo.setImageResource(R.drawable.berry_smoothie);
-                break;
 
             case "Avocado Toast with PoachedEgg":
                 txtActivity4ItemTime.setText("10 Min");
-                txtActivity4ItemTotalCal.setText("150 Cal");
-                txtFromWhatIt.setText("Ingredients: Avocado, Bread, Poached Egg, Salt, Pepper");
-                txtHowToMake.setText("Toast bread, spread mashed avocado on top, and add a poached egg. Sprinkle with salt and pepper.");
-                imgItemLogo.setImageResource(R.drawable.eggsandavogado);
-                break;
-
-            case "Oatmeal with Banana and Almonds":
-                txtActivity4ItemTime.setText("5 Min");
-                txtActivity4ItemTotalCal.setText("200 Cal");
-                txtFromWhatIt.setText("Ingredients: Oats, Banana, Almonds, Milk, Honey");
-                txtHowToMake.setText("Cook oats in milk, then top with banana slices, almonds, and a drizzle of honey.");
-                imgItemLogo.setImageResource(R.drawable.milkshofan);
+                txtActivity4ItemTotalCal.setText("260 Cal");
+                txtFromWhatIt.setText("Ingredients:\n1 slice whole-grain bread (70 calories)\n½ avocado, mashed (120 calories)\n1 poached egg (70 calories)\nSalt and pepper to taste\nOptional: sprinkle of red pepper flakes or chives");
+                txtHowToMake.setText("Instructions:\n1. Toast the bread.\n2. Spread the mashed avocado on the toast.\n3. Top with a poached egg.\n4. Season with salt, pepper, and optional toppings.");
+                imgItemLogo.setImageResource(R.drawable.eggsandavocado);
                 break;
 
             case "Greek Yogurt Parfait":
                 txtActivity4ItemTime.setText("5 Min");
-                txtActivity4ItemTotalCal.setText("180 Cal");
-                txtFromWhatIt.setText("Ingredients: Greek Yogurt, Granola, Berries, Honey");
-                txtHowToMake.setText("Layer Greek yogurt, granola, and berries in a bowl or glass. Drizzle with honey.");
+                txtActivity4ItemTotalCal.setText("255 Cal");
+                txtFromWhatIt.setText("Ingredients:\n1 cup Greek yogurt (plain, non-fat) (100 calories)\n½ cup mixed berries (35 calories)\n¼ cup granola (100 calories)\n1 tbsp honey (20 calories)");
+                txtHowToMake.setText("Instructions:\n1. Layer Greek yogurt, berries, granola, and honey in a bowl or glass.\n2. Repeat layers if desired.");
                 imgItemLogo.setImageResource(R.drawable.ugert);
                 break;
 
+            case "Oatmeal with Banana and Almonds":
+                txtActivity4ItemTime.setText("10 Min");
+                txtActivity4ItemTotalCal.setText("325 Cal");
+                txtFromWhatIt.setText("Ingredients:\n½ cup rolled oats (150 calories)\n1 cup water or almond milk (30 calories for almond milk)\n½ banana, sliced (50 calories)\n1 tbsp almond butter (90 calories)\nOptional: sprinkle of cinnamon or chia seeds (5 calories)");
+                txtHowToMake.setText("Instructions:\n1. Cook oats with water or almond milk.\n2. Top with banana slices and almond butter.\n3. Add optional toppings like cinnamon or chia seeds.");
+                imgItemLogo.setImageResource(R.drawable.milkshofan);
+                break;
+
             case "Vegetable and Cheese Omelette":
-                txtActivity4ItemTime.setText("15 Min");
-                txtActivity4ItemTotalCal.setText("220 Cal");
-                txtFromWhatIt.setText("Ingredients: Eggs, Cheese, Bell Peppers, Onions, Spinach, Salt, Pepper");
-                txtHowToMake.setText("Whisk eggs, then pour into a heated pan. Add chopped vegetables and cheese, cook until eggs are set.");
+                txtActivity4ItemTime.setText("10 Min");
+                txtActivity4ItemTotalCal.setText("185 Cal");
+                txtFromWhatIt.setText("Ingredients:\n2 large eggs (140 calories)\n¼ cup chopped bell pepper (10 calories)\n¼ cup spinach (5 calories)\n1 tbsp shredded cheese (30 calories)\nSalt and pepper to taste");
+                txtHowToMake.setText("Instructions:\n1. Whisk eggs with salt and pepper.\n2. Pour eggs into a heated, lightly oiled pan, and add vegetables.\n3. Cook until almost set, then add cheese and fold the omelette.");
                 imgItemLogo.setImageResource(R.drawable.eggspizza);
                 break;
 
-            case "Soup":
-                txtActivity4ItemTime.setText("Calories: 100\nSoup can be made from a variety of vegetables or meats. It’s a light, healthy meal and easy to digest.");
-                imgItemLogo.setImageResource(R.drawable.soup);
+
+            case "Baked Apples with Cinnamon":
+                txtActivity4ItemTime.setText("20 Min");
+                txtActivity4ItemTotalCal.setText("120 Cal");
+                txtFromWhatIt.setText("Ingredients:\n1 medium apple (80 calories)\n1 tsp cinnamon (0 calories)\n1 tsp honey (20 calories)\nOptional: a few chopped walnuts or almonds (20 calories)");
+                txtHowToMake.setText("Instructions:\n1. Preheat oven to 350°F (175°C).\n2. Core the apple and place it in a baking dish.\n3. Sprinkle with cinnamon and drizzle with honey.\n4. Bake for 15-20 minutes until tender. Top with nuts if desired.");
+                imgItemLogo.setImageResource(R.drawable.hunny);
                 break;
 
-            case "TonaSalad":
-                txtActivity4ItemTime.setText("Calories: 200\nA refreshing salad with tuna, veggies, and a light dressing.");
-                imgItemLogo.setImageResource(R.drawable.tonasalad);
+            case "Chia Pudding with Almond Milk and Fruit":
+                txtActivity4ItemTime.setText("5 Min (+ 2 hrs chilling)");
+                txtActivity4ItemTotalCal.setText("130 Cal");
+                txtFromWhatIt.setText("Ingredients:\n1 tbsp chia seeds (60 calories)\n½ cup unsweetened almond milk (15 calories)\n½ cup fresh fruit (berries or sliced banana) (35 calories)\nOptional: 1 tsp maple syrup or honey (20 calories)");
+                txtHowToMake.setText("Instructions:\n1. Combine chia seeds and almond milk in a bowl or jar. Stir well.\n2. Refrigerate for at least 2 hours or overnight to let the chia seeds thicken.\n3. Top with fruit and optional sweetener before serving.");
+                imgItemLogo.setImageResource(R.drawable.asalmuna);
                 break;
 
-            case "Sandwich":
-                txtActivity4ItemTime.setText("Calories: 250\nSandwiches can be filled with a variety of ingredients like meat, cheese, and vegetables.");
-                imgItemLogo.setImageResource(R.drawable.sanduish);
+            case "Chocolate-Dipped Strawberries":
+                txtActivity4ItemTime.setText("15 Min");
+                txtActivity4ItemTotalCal.setText("115 Cal");
+                txtFromWhatIt.setText("Ingredients:\n6 medium strawberries (25 calories)\n1 oz dark chocolate (70% cacao or higher) (90 calories)");
+                txtHowToMake.setText("Instructions:\n1. Melt the dark chocolate in a microwave-safe bowl in 15-second intervals, stirring until smooth.\n2. Dip each strawberry halfway into the chocolate and place on a parchment-lined plate.\n3. Refrigerate for 10-15 minutes until the chocolate hardens.");
+                imgItemLogo.setImageResource(R.drawable.chocomuna);
                 break;
 
-            case "Rice & Chicken":
-                txtActivity4ItemTime.setText("Calories: 350\nA hearty dish with rice and grilled or roasted chicken, often served with veggies.");
-                imgItemLogo.setImageResource(R.drawable.riceandchicken);
+            case "Banana Nice Cream":
+                txtActivity4ItemTime.setText("5 Min");
+                txtActivity4ItemTotalCal.setText("125 Cal");
+                txtFromWhatIt.setText("Ingredients:\n1 medium banana, sliced and frozen (90 calories)\n1 tsp peanut butter (30 calories)\nOptional: a dash of cinnamon or cocoa powder (5 calories)");
+                txtHowToMake.setText("Instructions:\n1. Blend the frozen banana in a food processor until smooth and creamy.\n2. Add peanut butter and optional cinnamon or cocoa powder, and blend again.\n3. Serve immediately as a soft-serve ice cream.");
+                imgItemLogo.setImageResource(R.drawable.cupcakemuna);
                 break;
 
-            case "Salads":
-                txtActivity4ItemTime.setText("Calories: 100\nA healthy dish made with fresh vegetables, perfect as a light meal or side.");
-                imgItemLogo.setImageResource(R.drawable.desert);
+
+            case "Mediterranean Chickpea Salad":
+                txtActivity4ItemTime.setText("10 Min");
+                txtActivity4ItemTotalCal.setText("248 Cal");
+                txtFromWhatIt.setText("Ingredients:\n1 cup canned chickpeas, drained and rinsed (120 calories)\n½ cup cucumber, diced (8 calories)\n½ cup cherry tomatoes, halved (15 calories)\n¼ cup red onion, finely chopped (10 calories)\n¼ cup crumbled feta cheese (50 calories)\n1 tbsp olive oil (40 calories)\n1 tbsp lemon juice (5 calories)\nSalt, pepper, and fresh parsley to taste");
+                txtHowToMake.setText("Instructions:\n1. In a large bowl, combine chickpeas, cucumber, cherry tomatoes, red onion, and feta cheese.\n2. Drizzle with olive oil and lemon juice.\n3. Season with salt, pepper, and parsley, and toss well.");
+                imgItemLogo.setImageResource(R.drawable.sonemuna);
                 break;
 
-            case "Kufta":
-                txtActivity4ItemTime.setText("Calories: 250\nKufta is a traditional dish made from minced meat, often grilled or fried.");
-                imgItemLogo.setImageResource(R.drawable.kufta);
+            case "Kale and Quinoa Salad":
+                txtActivity4ItemTime.setText("10 Min");
+                txtActivity4ItemTotalCal.setText("298 Cal");
+                txtFromWhatIt.setText("Ingredients:\n1 cup kale, chopped (33 calories)\n½ cup cooked quinoa (110 calories)\n¼ avocado, diced (60 calories)\n¼ cup shredded carrots (10 calories)\n1 tbsp sunflower seeds (45 calories)\n1 tbsp olive oil (40 calories)\n1 tbsp apple cider vinegar (0 calories)\nSalt and pepper to taste");
+                txtHowToMake.setText("Instructions:\n1. Massage the chopped kale with a pinch of salt to soften it.\n2. In a bowl, combine kale, cooked quinoa, avocado, shredded carrots, and sunflower seeds.\n3. Drizzle with olive oil and apple cider vinegar, and toss to mix.");
+                imgItemLogo.setImageResource(R.drawable.stwomuna);
                 break;
 
-            case "Eggs & Avocado":
-                txtActivity4ItemTime.setText("Calories: 220\nA combination of eggs and avocado, a protein-packed, healthy dish.");
-                imgItemLogo.setImageResource(R.drawable.eggsandavocado);
+            case "Spinach, Apple, and Walnut Salad":
+                txtActivity4ItemTime.setText("5 Min");
+                txtActivity4ItemTotalCal.setText("214 Cal");
+                txtFromWhatIt.setText("Ingredients:\n2 cups spinach leaves (14 calories)\n½ apple, thinly sliced (30 calories)\n¼ cup walnuts, chopped (100 calories)\n1 tbsp crumbled goat cheese (30 calories)\n1 tbsp balsamic vinaigrette (40 calories)");
+                txtHowToMake.setText("Instructions:\n1. In a bowl, combine spinach, apple slices, walnuts, and goat cheese.\n2. Drizzle with balsamic vinaigrette and toss to coat.");
+                imgItemLogo.setImageResource(R.drawable.sthreemuna);
                 break;
 
-            case "Salmon":
-                txtActivity4ItemTime.setText("Calories: 350\nSalmon is a nutritious fish, rich in omega-3 fatty acids, often grilled or baked.");
-                imgItemLogo.setImageResource(R.drawable.salmon);
+            case "Mexican Black Bean Salad":
+                txtActivity4ItemTime.setText("5 Min");
+                txtActivity4ItemTotalCal.setText("183 Cal");
+                txtFromWhatIt.setText("Ingredients:\n½ cup black beans, drained and rinsed (60 calories)\n½ cup corn kernels (60 calories)\n½ cup diced bell pepper (10 calories)\n¼ cup cherry tomatoes, halved (8 calories)\n1 tbsp chopped cilantro (0 calories)\n1 tbsp lime juice (5 calories)\n1 tsp olive oil (40 calories)\nSalt, pepper, and chili powder to taste");
+                txtHowToMake.setText("Instructions:\n1. In a bowl, combine black beans, corn, bell pepper, cherry tomatoes, and cilantro.\n2. Drizzle with lime juice and olive oil.\n3. Season with salt, pepper, and chili powder, and toss to mix.");
+                imgItemLogo.setImageResource(R.drawable.sfourmuna);
                 break;
 
-            case "Shofan Biscuit":
-                txtActivity4ItemTime.setText("Calories: 150\nA sweet, crispy biscuit made from fried dough, perfect as a snack.");
-                imgItemLogo.setImageResource(R.drawable.shofanbiscuit);
-                break;
-
-            case "Ice Cream":
-                txtActivity4ItemTime.setText("Calories: 200\nA frozen dessert made from milk and sugar, often flavored with fruit, chocolate, or vanilla.");
-                imgItemLogo.setImageResource(R.drawable.icecream);
-                break;
-
-            case "Zabadi Tot":
-                txtActivity4ItemTime.setText("Calories: 120\nA delicious Middle Eastern treat made with yogurt and fresh fruits.");
-                imgItemLogo.setImageResource(R.drawable.totandzabazy);
-                break;
-
-            case "Dark Chocolate":
-                txtActivity4ItemTime.setText("Calories: 170\nDark chocolate is rich in antioxidants and has a distinct bittersweet flavor.");
-                imgItemLogo.setImageResource(R.drawable.darkchocolate);
-                break;
-
-            case "Weight":
-                txtActivity4ItemTime.setText("Calories Burned (30 minutes): 180-250 Cal \nWeight training involves lifting weights to build muscle strength.");
-                imgItemLogo.setImageResource(R.drawable.weight_training);
-                break;
-
-            case "HIIT":
-                txtActivity4ItemTime.setText("Calories Burned (30 minutes): 400-600 Cal \nHigh-intensity interval training involves short bursts of intense exercise followed by rest.");
-                imgItemLogo.setImageResource(R.drawable.hiit);
-                break;
-
-            case "Cycling":
-                txtActivity4ItemTime.setText("Calories Burned (30 minutes): 250-400 Cal \nCycling is a great cardiovascular workout that strengthens the legs and improves endurance.");
-                imgItemLogo.setImageResource(R.drawable.cycling);
-                break;
-
-            case "Rowing":
-                txtActivity4ItemTime.setText("Calories Burned (30 minutes): 250-300 Cal \nRowing is a full-body workout that engages multiple muscle groups while improving cardiovascular health.");
-                imgItemLogo.setImageResource(R.drawable.rowing);
-                break;
-
-            case "Yoga":
-                txtActivity4ItemTime.setText("Calories Burned (30 minutes): 150-250 Cal \nYoga involves postures and breathing exercises that promote flexibility, strength, and mental clarity.");
-                imgItemLogo.setImageResource(R.drawable.yoga);
-                break;
-
-            case "Bodyweight":
-                txtActivity4ItemTime.setText("Calories Burned (30 minutes): 200-300 Cal \nBodyweight exercises use your own body as resistance, such as push-ups, squats, and lunges.");
-                imgItemLogo.setImageResource(R.drawable.bodyweight_exercises);
-                break;
-
-            case "Jump Rope":
-                txtActivity4ItemTime.setText("Calories Burned (30 minutes): 350-450 Cal \nJump rope is a great cardio exercise that improves coordination, endurance, and heart health.");
-                imgItemLogo.setImageResource(R.drawable.jump_rope);
-                break;
-
-            case "Pilates":
-                txtActivity4ItemTime.setText("Calories Burned (30 minutes): 175-250 Cal \nPilates is a form of low-impact exercise that improves posture, flexibility, and strength.");
-                imgItemLogo.setImageResource(R.drawable.pilates);
-                break;
 
             default:
                 break;
