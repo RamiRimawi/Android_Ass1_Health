@@ -81,70 +81,70 @@ public class CaloriesActivity extends AppCompatActivity {
 
     private void initializeCategories() {
         calories = new ArrayList<>();
-        calories.add(new FDTDItems("Food", List.of(
-                new CaloriesDataAndNames("Whole wheat bread ", 75),
-                new CaloriesDataAndNames("Boiled egg", 70),
-                new CaloriesDataAndNames("Plain Greek yogurt", 100),
-                new CaloriesDataAndNames("Fresh orange juice", 110),
-                new CaloriesDataAndNames("Banana", 105),
-                new CaloriesDataAndNames("Cottage cheese", 110),
-                new CaloriesDataAndNames("Apple", 100),
-                new CaloriesDataAndNames("Grilled chicken", 165),
-                new CaloriesDataAndNames("Green salad", 27),
-                new CaloriesDataAndNames("Roasted potatoes", 110),
-                new CaloriesDataAndNames("Avocado", 160),
-                new CaloriesDataAndNames("Hummus", 70),
-                new CaloriesDataAndNames("Honey", 60),
-                new CaloriesDataAndNames("Peanut butter", 95),
-                new CaloriesDataAndNames("Grilled fish", 150),
-                new CaloriesDataAndNames("Cooked lentils", 115),
-                new CaloriesDataAndNames("Low-fat white cheese", 70),
-                new CaloriesDataAndNames("Dates", 70),
-                new CaloriesDataAndNames("Plain yogurt", 150)
-        )));
-        calories.add(new FDTDItems("Drink", List.of(
-                new CaloriesDataAndNames("Cold Water", 0),
-                new CaloriesDataAndNames("Tea", 2),
-                new CaloriesDataAndNames("Natural Fruit Cocktail", 135),
-                new CaloriesDataAndNames("Fruit Cocktail with Milk", 175),
-                new CaloriesDataAndNames("Strawberry Cocktail with Milk", 190),
-                new CaloriesDataAndNames("Mixed Fruit Smoothie", 175),
-                new CaloriesDataAndNames("Apple & Carrot Cocktail", 110),
-                new CaloriesDataAndNames("Orange & Carrot Cocktail", 120),
-                new CaloriesDataAndNames("Kiwi & Strawberry Cocktail", 135),
-                new CaloriesDataAndNames("Avocado & Milk Cocktail", 325),
-                new CaloriesDataAndNames("Banana & Milk Cocktail", 230),
-                new CaloriesDataAndNames("Mango Cocktail", 165),
-                new CaloriesDataAndNames("Pineapple & Coconut Cocktail", 225),
-                new CaloriesDataAndNames("Melon & Milk Cocktail", 165),
-                new CaloriesDataAndNames("Black Coffee", 3),
-                new CaloriesDataAndNames("Fresh Orange Juice", 110),
-                new CaloriesDataAndNames("Fresh Apple Juice", 120),
-                new CaloriesDataAndNames("Lemon-Mint Juice", 17),
-                new CaloriesDataAndNames("Diet Soda", 3)
-        )));
-        calories.add(new FDTDItems("Dessert", List.of(
-                new CaloriesDataAndNames("Chia Pudding", 175),
-                new CaloriesDataAndNames("Greek Yogurt with Honey and Fruit", 175),
-                new CaloriesDataAndNames("Energy Balls with Oats and Dried Fruit", 90),
-                new CaloriesDataAndNames("Baked Apple with Cinnamon", 97),
-                new CaloriesDataAndNames("Dark Chocolate Avocado Brownies", 135),
-                new CaloriesDataAndNames("Banana Slices with Peanut Butter", 150),
-                new CaloriesDataAndNames("Chocolate Hummus", 190),
-                new CaloriesDataAndNames("Fresh Fruit Sorbet", 85),
-                new CaloriesDataAndNames("Honey and Nut Oat Bars", 165),
-                new CaloriesDataAndNames("Greek Yogurt Cheesecake", 190),
-                new CaloriesDataAndNames("Dark Chocolate Avocado Mousse", 165),
-                new CaloriesDataAndNames("Banana and Oat Pudding", 210),
-                new CaloriesDataAndNames("Healthy Carrot Cake", 165),
-                new CaloriesDataAndNames("Fresh Fruit Salad", 110),
-                new CaloriesDataAndNames("Dark Chocolate Nut Bars", 130),
-                new CaloriesDataAndNames("Quinoa and Berry Parfait", 165),
-                new CaloriesDataAndNames("Baked Pear with Almond Butter", 135),
-                new CaloriesDataAndNames("Coconut Chia Pudding with Mango", 190),
-                new CaloriesDataAndNames("Green Tea Energy Bites", 90),
-                new CaloriesDataAndNames("Pumpkin Spice Oat Cookies", 100)
-        )));
+//        calories.add(new FDTDItems("Food", List.of(
+//                new CaloriesDataAndNames("Whole wheat bread ", 75),
+//                new CaloriesDataAndNames("Boiled egg", 70),
+//                new CaloriesDataAndNames("Plain Greek yogurt", 100),
+//                new CaloriesDataAndNames("Fresh orange juice", 110),
+//                new CaloriesDataAndNames("Banana", 105),
+//                new CaloriesDataAndNames("Cottage cheese", 110),
+//                new CaloriesDataAndNames("Apple", 100),
+//                new CaloriesDataAndNames("Grilled chicken", 165),
+//                new CaloriesDataAndNames("Green salad", 27),
+//                new CaloriesDataAndNames("Roasted potatoes", 110),
+//                new CaloriesDataAndNames("Avocado", 160),
+//                new CaloriesDataAndNames("Hummus", 70),
+//                new CaloriesDataAndNames("Honey", 60),
+//                new CaloriesDataAndNames("Peanut butter", 95),
+//                new CaloriesDataAndNames("Grilled fish", 150),
+//                new CaloriesDataAndNames("Cooked lentils", 115),
+//                new CaloriesDataAndNames("Low-fat white cheese", 70),
+//                new CaloriesDataAndNames("Dates", 70),
+//                new CaloriesDataAndNames("Plain yogurt", 150)
+//        )));
+//        calories.add(new FDTDItems("Drink", List.of(
+//                new CaloriesDataAndNames("Cold Water", 0),
+//                new CaloriesDataAndNames("Tea", 2),
+//                new CaloriesDataAndNames("Black Coffee", 3),
+//                new CaloriesDataAndNames("Natural Fruit Cocktail", 135),
+//                new CaloriesDataAndNames("Fruit Cocktail with Milk", 175),
+//                new CaloriesDataAndNames("Strawberry Cocktail with Milk", 190),
+//                new CaloriesDataAndNames("Mixed Fruit Smoothie", 175),
+//                new CaloriesDataAndNames("Apple & Carrot Cocktail", 110),
+//                new CaloriesDataAndNames("Orange & Carrot Cocktail", 120),
+//                new CaloriesDataAndNames("Kiwi & Strawberry Cocktail", 135),
+//                new CaloriesDataAndNames("Avocado & Milk Cocktail", 325),
+//                new CaloriesDataAndNames("Banana & Milk Cocktail", 230),
+//                new CaloriesDataAndNames("Mango Cocktail", 165),
+//                new CaloriesDataAndNames("Pineapple & Coconut Cocktail", 225),
+//                new CaloriesDataAndNames("Melon & Milk Cocktail", 165),
+//                new CaloriesDataAndNames("Fresh Orange Juice", 110),
+//                new CaloriesDataAndNames("Fresh Apple Juice", 120),
+//                new CaloriesDataAndNames("Lemon-Mint Juice", 17),
+//                new CaloriesDataAndNames("Diet Soda", 3)
+//        )));
+//        calories.add(new FDTDItems("Dessert", List.of(
+//                new CaloriesDataAndNames("Chia Pudding", 175),
+//                new CaloriesDataAndNames("Greek Yogurt with Honey and Fruit", 175),
+//                new CaloriesDataAndNames("Energy Balls with Oats and Dried Fruit", 90),
+//                new CaloriesDataAndNames("Baked Apple with Cinnamon", 97),
+//                new CaloriesDataAndNames("Dark Chocolate Avocado Brownies", 135),
+//                new CaloriesDataAndNames("Banana Slices with Peanut Butter", 150),
+//                new CaloriesDataAndNames("Chocolate Hummus", 190),
+//                new CaloriesDataAndNames("Fresh Fruit Sorbet", 85),
+//                new CaloriesDataAndNames("Honey and Nut Oat Bars", 165),
+//                new CaloriesDataAndNames("Greek Yogurt Cheesecake", 190),
+//                new CaloriesDataAndNames("Dark Chocolate Avocado Mousse", 165),
+//                new CaloriesDataAndNames("Banana and Oat Pudding", 210),
+//                new CaloriesDataAndNames("Healthy Carrot Cake", 165),
+//                new CaloriesDataAndNames("Fresh Fruit Salad", 110),
+//                new CaloriesDataAndNames("Dark Chocolate Nut Bars", 130),
+//                new CaloriesDataAndNames("Quinoa and Berry Parfait", 165),
+//                new CaloriesDataAndNames("Baked Pear with Almond Butter", 135),
+//                new CaloriesDataAndNames("Coconut Chia Pudding with Mango", 190),
+//                new CaloriesDataAndNames("Green Tea Energy Bites", 90),
+//                new CaloriesDataAndNames("Pumpkin Spice Oat Cookies", 100)
+//        )));
         calories.add(new FDTDItems("Fruit", List.of(
                 new CaloriesDataAndNames("Apple", 95),
                 new CaloriesDataAndNames("Banana", 105),
@@ -175,7 +175,6 @@ public class CaloriesActivity extends AppCompatActivity {
                 new CaloriesDataAndNames("Cooked Broccoli", 55),
                 new CaloriesDataAndNames("Spinach", 7),
                 new CaloriesDataAndNames("Bell Pepper", 33),
-                new CaloriesDataAndNames("Grilled Eggplant", 35),
                 new CaloriesDataAndNames("Boiled Potato", 110),
                 new CaloriesDataAndNames("Zucchini", 33),
                 new CaloriesDataAndNames("Onion", 45),
@@ -185,9 +184,7 @@ public class CaloriesActivity extends AppCompatActivity {
                 new CaloriesDataAndNames("Boiled Corn", 130),
                 new CaloriesDataAndNames("Baked Sweet Potato", 112),
                 new CaloriesDataAndNames("Kale", 33),
-                new CaloriesDataAndNames("Beetroot", 35),
-                new CaloriesDataAndNames("Asparagus", 27),
-                new CaloriesDataAndNames("Brussels Sprouts", 38)
+                new CaloriesDataAndNames("Beetroot", 35)
         )));
     }
 

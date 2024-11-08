@@ -161,17 +161,17 @@ public class ItemsActivity extends AppCompatActivity {
         txtHorItem4.setText("Snack");
         imgHorItem4.setImageResource(R.drawable.fruit);
 
-        imgItem1Image.setImageResource(R.drawable.eggs);
-        txtItem1Name.setText("Eggs");
+        imgItem1Image.setImageResource(R.drawable.eggsandavogado);
+        txtItem1Name.setText("Avocado Toast with PoachedEgg");
 
-        imgItem2Image.setImageResource(R.drawable.avogado);
-        txtItem2Name.setText("Avocado");
+        imgItem2Image.setImageResource(R.drawable.milkshofan);
+        txtItem2Name.setText("Oatmeal with Banana and Almonds");
 
-        imgItem3Image.setImageResource(R.drawable.homus);
-        txtItem3Name.setText("Homus");
+        imgItem3Image.setImageResource(R.drawable.ugert);
+        txtItem3Name.setText("Greek Yogurt Parfait");
 
-        imgItem4Image.setImageResource(R.drawable.shofan);
-        txtItem4Name.setText("Shofan");
+        imgItem4Image.setImageResource(R.drawable.eggspizza);
+        txtItem4Name.setText("Vegetable and Cheese Omelette");
     }
 
     private void setUpDrinks() {
@@ -218,17 +218,17 @@ public class ItemsActivity extends AppCompatActivity {
     private void updateVerticalCards(String food) {
         switch (food) {
             case "BreakFast":
-                imgItem1Image.setImageResource(R.drawable.eggs);
-                txtItem1Name.setText("Eggs");
+                imgItem1Image.setImageResource(R.drawable.eggsandavogado);
+                txtItem1Name.setText("Avocado Toast with PoachedEgg");
 
-                imgItem2Image.setImageResource(R.drawable.avogado);
-                txtItem2Name.setText("Avocado");
+                imgItem2Image.setImageResource(R.drawable.milkshofan);
+                txtItem2Name.setText("Oatmeal with Banana and Almonds");
 
-                imgItem3Image.setImageResource(R.drawable.homus);
-                txtItem3Name.setText("Homus");
+                imgItem3Image.setImageResource(R.drawable.ugert);
+                txtItem3Name.setText("Greek Yogurt Parfait");
 
-                imgItem4Image.setImageResource(R.drawable.shofan);
-                txtItem4Name.setText("Shofan");
+                imgItem4Image.setImageResource(R.drawable.eggspizza);
+                txtItem4Name.setText("Vegetable and Cheese Omelette");
                 break;
 
             case "Lunch":

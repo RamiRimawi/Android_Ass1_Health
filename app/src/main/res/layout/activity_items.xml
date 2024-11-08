@@ -33,7 +33,7 @@
             android:layout_height="75dp"
             android:layout_marginStart="9dp"
             android:backgroundTint="@color/white"
-            app:cardCornerRadius="34dp">
+            app:cardCornerRadius="20dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -55,6 +55,7 @@
                     android:gravity="center"
                     android:textColor="@android:color/black"
                     android:textSize="13sp"
+                    android:layout_marginBottom="5dp"
                     android:textStyle="bold" />
 
             </LinearLayout>
@@ -67,7 +68,7 @@
             android:layout_height="75dp"
             android:layout_marginStart="9dp"
             android:backgroundTint="@color/white"
-            app:cardCornerRadius="34dp">
+            app:cardCornerRadius="20dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -89,6 +90,7 @@
                     android:gravity="center"
                     android:textColor="@android:color/black"
                     android:textSize="13sp"
+                    android:layout_marginBottom="5dp"
                     android:textStyle="bold" />
 
             </LinearLayout>
@@ -101,7 +103,7 @@
             android:layout_height="75dp"
             android:layout_marginStart="9dp"
             android:backgroundTint="@color/white"
-            app:cardCornerRadius="34dp">
+            app:cardCornerRadius="20dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -123,6 +125,8 @@
                     android:gravity="center"
                     android:textColor="@android:color/black"
                     android:textSize="13sp"
+                    android:layout_marginBottom="5dp"
+
                     android:textStyle="bold" />
 
             </LinearLayout>
@@ -136,7 +140,7 @@
             android:layout_marginStart="9dp"
             android:layout_marginEnd="8dp"
             android:backgroundTint="@color/white"
-            app:cardCornerRadius="34dp">
+            app:cardCornerRadius="20dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -158,6 +162,7 @@
                     android:gravity="center"
                     android:textColor="@android:color/black"
                     android:textSize="13sp"
+                    android:layout_marginBottom="5dp"
                     android:textStyle="bold" />
 
             </LinearLayout>
@@ -182,7 +187,7 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/crdVerItem1"
             android:layout_width="4dp"
-            android:layout_height="40dp"
+            android:layout_height="20dp"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:layout_margin="9dp"
@@ -198,11 +203,11 @@
 
                 <ImageView
                     android:id="@+id/imgItem1Image"
-                    android:layout_width="134dp"
-                    android:layout_height="118dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="10dp"
-                    android:src="@drawable/eggs" />
+                    android:src="@drawable/eggsandavogado" />
 
 
                 <TextView
@@ -224,7 +229,7 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/crdVerItem2"
             android:layout_width="2dp"
-            android:layout_height="40dp"
+            android:layout_height="20dp"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:layout_margin="9dp"
@@ -243,7 +248,7 @@
                     android:layout_height="118dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="10dp"
-                    android:src="@drawable/avogado" />
+                    android:src="@drawable/milkshofan" />
 
                 <TextView
                     android:id="@+id/txtItem2Name"
@@ -264,7 +269,7 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/crdVerItem3"
             android:layout_width="0dp"
-            android:layout_height="40dp"
+            android:layout_height="20dp"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:layout_margin="9dp"
@@ -283,7 +288,7 @@
                     android:layout_height="118dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="10dp"
-                    android:src="@drawable/homus" />
+                    android:src="@drawable/ugert" />
 
                 <TextView
                     android:id="@+id/txtItem3Name"
@@ -304,7 +309,7 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/crdVerItem4"
             android:layout_width="0dp"
-            android:layout_height="40dp"
+            android:layout_height="20dp"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:layout_margin="9dp"
@@ -323,7 +328,7 @@
                     android:layout_height="118dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="10dp"
-                    android:src="@drawable/shofan" />
+                    android:src="@drawable/eggspizza" />
 
                 <TextView
                     android:id="@+id/txtItem4Name"
