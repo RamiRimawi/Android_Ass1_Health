@@ -6,16 +6,11 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import java.util.List;
-import java.util.Objects;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
 public class ItemsActivity extends AppCompatActivity {
 
-    String itemName = "ITEM_NAME";
     private TextView txtNameItem;
     private TextView txtItem1Name, txtItem2Name, txtItem3Name, txtItem4Name;
     private TextView txtHorItem1, txtHorItem2, txtHorItem3, txtHorItem4;
@@ -236,13 +231,13 @@ public class ItemsActivity extends AppCompatActivity {
                 txtItem1Name.setText("Grilled Salmon with Quinoa and Steamed Vegetables");
 
                 imgItem2Image.setImageResource(R.drawable.ltwomuna);
-                txtItem2Name.setText("Turkey and Vegetable Stir-Fry with Brown Rice");
+                txtItem2Name.setText("Turkey and Vegetable Stir-Fry with Brown Rice");
 
                 imgItem3Image.setImageResource(R.drawable.lthreemuna);
                 txtItem3Name.setText("Stuffed Bell Peppers");
 
                 imgItem4Image.setImageResource(R.drawable.lfourmuna);
-                txtItem4Name.setText("Chicken and Vegetable Soup");
+                txtItem4Name.setText("Chicken and Vegetable Soup");
                 break;
 
             case "Salad":
@@ -256,7 +251,7 @@ public class ItemsActivity extends AppCompatActivity {
                 txtItem3Name.setText("Mexican Black Bean Salad");
 
                 imgItem4Image.setImageResource(R.drawable.sthreemuna);
-                txtItem4Name.setText("Spinach, Apple, and Walnut Salad");
+                txtItem4Name.setText("Spinach, Apple, and Walnut Salad");
                 break;
 
             case "Dessert":
@@ -270,7 +265,7 @@ public class ItemsActivity extends AppCompatActivity {
                 txtItem3Name.setText("Chocolate-Dipped Strawberries");
 
                 imgItem4Image.setImageResource(R.drawable.asalmuna);
-                txtItem4Name.setText("Chia Pudding with Almond Milk and Fruit");
+                txtItem4Name.setText("Chia Pudding with Almond Milk and Fruit");
                 break;
 
             case "Hot":
