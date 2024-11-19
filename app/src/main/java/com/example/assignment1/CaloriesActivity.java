@@ -2,7 +2,6 @@ package com.example.assignment1;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
@@ -51,22 +50,19 @@ public class CaloriesActivity extends AppCompatActivity {
         spnCaloriesList.setAdapter(adapter);
 
         // Set up button click listener
-        btnShowCalories.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // selected category
-                String selectedCategory = spnCaloriesList.getSelectedItem().toString();
-                // Find corresponding calories data
-                caloriesList = getCaloriesForCategory(selectedCategory);
-                // Display calories data in the ListView
-                List<String> calorieInfo = new ArrayList<>();
-                for (CaloriesDataAndNames item : caloriesList) {
-                    calorieInfo.add(item.getCaloriesName() + ": " + item.getCaloriesTotal() + " Cal");
-                }
-                // Update the ListView with calorie data
-                caloriesAdapter = new ArrayAdapter<>(CaloriesActivity.this, android.R.layout.simple_list_item_1, calorieInfo);
-                lstCaloriesLists.setAdapter(caloriesAdapter);
+        btnShowCalories.setOnClickListener(v -> {
+            // selected category
+            String selectedCategory = spnCaloriesList.getSelectedItem().toString();
+            // Find corresponding calories data
+            caloriesList = getCaloriesForCategory(selectedCategory);
+            // Display calories data in the ListView
+            List<String> calorieInfo = new ArrayList<>();
+            for (CaloriesDataAndNames item : caloriesList) {
+                calorieInfo.add(item.getCaloriesName() + ": " + item.getCaloriesTotal() + " Cal");
             }
+            // Update the ListView with calorie data
+            caloriesAdapter = new ArrayAdapter<>(CaloriesActivity.this, android.R.layout.simple_list_item_1, calorieInfo);
+            lstCaloriesLists.setAdapter(caloriesAdapter);
         });
     }
 

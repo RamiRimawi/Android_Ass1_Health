@@ -1,5 +1,7 @@
 package com.example.assignment1;
 
+import java.util.ArrayList;
+
 public class CaloriesDataAndNames {
     private String caloriesName;
     private double caloriesTotal;
@@ -15,5 +17,9 @@ public class CaloriesDataAndNames {
 
     public double getCaloriesTotal() {
         return caloriesTotal;
+    }
+
+    public ArrayList<CaloriesDataAndNames> getArray(){
+        return new ArrayList<>();
     }
 }
